@@ -1,0 +1,66 @@
+:root {
+    --primary: #0367bf;
+    --bg : #cccccc;
+    --font-color:#ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", Arial, Helvetica, sans-serif ;
+}
+body {
+    background-image: url('/assets/background/moroccan-flower.png');
+}
+.container-primary {
+    margin: 130px auto;
+}
+.container-secondary {
+    background-color: var(--primary);
+    display: flex;
+    padding: 30px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.container-secondary iframe {
+    flex: 2;
+}
+.container-secondary .group-comment {
+    flex: 1;
+}
+.container-secondary .group-comment form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.container-secondary .group-comment form input,
+.container-secondary .group-comment form textarea {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.container-secondary .group-comment form textarea  {
+    height: 100px;
+}
+.container-secondary .group-comment form label {
+    text-transform: capitalize;
+    color: var(--font-color);
+    text-transform: capitalize;
+}
+.container-secondary .group-comment form .send {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--font-color);
+    border: 1px solid lime;
+    text-transform: capitalize;
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+
+}
